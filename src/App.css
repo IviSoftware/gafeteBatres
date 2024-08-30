@@ -1,0 +1,126 @@
+.containerCardMainer{
+    width: 90vw;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: white;
+
+    border-radius: 20px;
+}
+
+
+
+.headerImage{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.footerMainer{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+    background-color: #0F4C8F;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.fullName,
+.position{
+    text-align: center;
+}
+
+.preFooter {
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    background: linear-gradient(
+      145deg,
+      #d8b568 20%,
+      #e5c478 40%,
+      #ffffff 50%, /* Destello brillante en el centro */
+      #f0d28a 60%,
+      #e5c478 80%,
+      #d8b568 100%
+    );
+    background-size: 400% 400%;
+    animation: metallicShine 3s ease-in-out infinite;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  /* Animación para crear un destello metálico más pronunciado */
+  @keyframes metallicShine {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+
+/* Animaciones y estilo de entrada suave */
+.animated-entry {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  
+  .slide-up-delay {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.6s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .icon {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Keyframes de las animaciones */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
