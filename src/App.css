@@ -54,6 +54,27 @@ body{
     color: #333;
     border-radius: 5px;
   }
+
+  .banner {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, 
+    #CE850D 0%,          /* Color inicial a la izquierda */
+    #C3780B 30%,         /* Color oscuro hacia el centro */
+    #8B5A04 50%,         /* Centro más oscuro */
+    #C3780B 70%,         /* Transición hacia la derecha */
+    #E29B0F 100%);       /* Color final a la derecha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
   
   /* Animación para crear un destello metálico más pronunciado */
   @keyframes metallicShine {

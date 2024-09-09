@@ -47,46 +47,23 @@ const App = () => {
         src="https://raw.githubusercontent.com/Integra-Meetings/batresCorreoImagenes/main/headerRegistro.png"
         alt="Header"
       />
-      <h1 className="fullName slide-up">
+      <h1 className="fullName slide-up" style={{padding:"10px"}}>
         {userData ? `${userData.nombre} ${userData.apellido}` : 'Cargando...'}
       </h1>
-      <h2 className="position slide-up-delay">{userData ? userData.sucursal : 'Cargando...'}</h2>
 
-      <div className="preFooter fade-in-delay">
-        <h3>{userData ? userData.region : 'Cargando...'}</h3>
+      {/**<h2 className="position slide-up-delay">{userData ? userData.sucursal : 'Cargando...'}</h2> */}   
+
+     {/** <div class="banner">
+        <span class="banner-text"><b>{userData ? userData.region : 'Cargando...'}</b></span>
+      </div> */}
+
+      <div class="banner">
+        <span class="banner-text"><b>VISITANTE</b></span>
       </div>
 
-      <div className="footerMainer fade-in-delay">
-        <a
-          href="https://www.facebook.com/FarmBatres?mibextid=JRoKGi"
-          style={{ color: '#ffffff', textDecoration: 'underline' }}
-        >
-          <img
-            alt="logo_facebook"
-            src="https://raw.githubusercontent.com/Integra-Meetings/batresCorreoImagenes/main/facebook.png"
-            className="icon"
-          />
-        </a>
-        <a
-          href="https://www.instagram.com/farmbatres/"
-          style={{ color: '#ffffff', textDecoration: 'underline' }}
-        >
-          <img
-            alt="logo_instagram"
-            src="https://raw.githubusercontent.com/Integra-Meetings/batresCorreoImagenes/main/ig.png"
-            className="icon"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEcnEVbLDwmqAAAAZGkpdx4aR91L7moL1dZERknaTasrnWUr3ua2P652amUrfqqY4abb2frP48DZGBk17Sl-0rmEPmNtWjJb4qL-F8cHgjfktekB_EaVMFMK0Vhvvwo7zoMW2g=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcorporaci%25C3%25B3n-batres-1b4141249%2F"
-          style={{ color: '#ffffff', textDecoration: 'underline' }}
-        >
-          <img
-            alt="logo_linkedin"
-            src="https://raw.githubusercontent.com/Integra-Meetings/batresCorreoImagenes/main/linkedin.png"
-            className="icon"
-          />
-        </a>
+      <div className="footerMainer w-full fade-in-delay" style={{padding:0,position:"relative"}}>
+        <p style={{color:"white",position:"absolute",left:"15px",top:"8px"}}><b>25 / 27 SEPTIEMBRE</b></p>
+        <img style={{width:'100%'}} src="https://raw.githubusercontent.com/Integra-Meetings/batresCorreoImagenes/main/BANNER%20BOTTOM%20GAFETE%201921X258%20PX.jpg" alt="footerImg" />
       </div>
     </section>
   );
