@@ -1,12 +1,18 @@
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .containerCardMainer{
-    width: 90vw;
+    width: 95vw;
     max-width: 550px;
     margin: 0 auto;
     background-color: white;
 
     border-radius: 20px;
 }
-
 
 
 .headerImage{
