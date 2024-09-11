@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 
 const App = () => {
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState({});
 
   // Función para obtener el parámetro 'email' de la URL
   const getEmailFromQuery = () => {
@@ -51,7 +51,8 @@ const App = () => {
         {userData ? `${userData.nombre} ${userData.apellido}` : 'Cargando...'}
       </h1>
 
-      {/**<h2 className="position slide-up-delay">{userData ? userData.sucursal : 'Cargando...'}</h2> */}   
+      
+      <h2 className="position slide-up-delay">{userData ? userData.cargo : 'Cargando...'}</h2> 
 
      {/** <div class="banner">
         <span class="banner-text"><b>{userData ? userData.region : 'Cargando...'}</b></span>
