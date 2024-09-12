@@ -52,7 +52,10 @@ const App = () => {
       </h1>
 
       
-      <h2 className="position slide-up-delay">{userData ? userData.cargo : 'Cargando...'}</h2> 
+      <h2 className="position slide-up-delay">
+      {userData ? (userData.cargo ? userData.cargo.toUpperCase() : 'Cargando cargo...') : 'Cargando cargo...'}
+    </h2>
+
 
      {/** <div class="banner">
         <span class="banner-text"><b>{userData ? userData.region : 'Cargando...'}</b></span>
