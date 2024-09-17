@@ -62,7 +62,7 @@ const App = () => {
       </div> */}
 
       <div class="banner">
-        <span class="banner-text"><b>VISITANTE</b></span>
+        <span class="banner-text"><b>INVITADO</b></span>
       </div>
 
       <div className="footerMainer w-full fade-in-delay" style={{padding:0,position:"relative"}}>
